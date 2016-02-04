@@ -11,7 +11,7 @@ $file =~ /(.*)\.phy/;
 my $id =$1;
 
 
-system "raxmlHPC-PTHREADS -T 10 -s $file -n $id.tree -m  GTRGAMMA";
+system "raxmlHPC-PTHREADS -T 10 -p 1234 -s $file -n $id.tree -m  GTRGAMMA";
 
 exit;
 
